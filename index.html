@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Professionelle Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Eigene CSS-Anpassungen */
+    .hero {
+      background: url('https://via.placeholder.com/1920x600') no-repeat center center;
+      background-size: cover;
+      color: #fff;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+    .section-padding {
+      padding: 60px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Meine Firma</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Navigation umschalten">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Über uns</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Dienstleistungen</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="hero">
+    <div class="container">
+      <h1>Willkommen bei Meine Firma</h1>
+      <p class="lead">Ihr Partner für professionelle Lösungen</p>
+      <a href="#contact" class="btn btn-primary btn-lg mt-4">Kontaktieren Sie uns</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2>Über uns</h2>
+          <p>Wir sind ein erfahrenes Team, das sich auf innovative Lösungen spezialisiert hat. Unser Ziel ist es, Ihre Vision in die Realität umzusetzen und Ihr Geschäft voranzubringen.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="https://via.placeholder.com/500x300" alt="Über uns" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-light section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>Unsere Dienstleistungen</h2>
+        <p class="lead">Wir bieten eine Vielzahl von Lösungen, die auf Ihre Bedürfnisse zugeschnitten sind.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Dienstleistung 1">
+            <div class="card-body">
+              <h5 class="card-title">Dienstleistung 1</h5>
+              <p class="card-text">Maßgeschneiderte Lösungen, die Ihre Anforderungen erfüllen.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Dienstleistung 2">
+            <div class="card-body">
+              <h5 class="card-title">Dienstleistung 2</h5>
+              <p class="card-text">Innovative Ansätze und modernste Technologien.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Dienstleistung 3">
+            <div class="card-body">
+              <h5 class="card-title">Dienstleistung 3</h5>
+              <p class="card-text">Qualität und Zuverlässigkeit stehen bei uns im Vordergrund.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>Kontakt</h2>
+        <p class="lead">Kontaktieren Sie uns für weitere Informationen oder ein persönliches Beratungsgespräch.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Ihr Name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-Mail</label>
+              <input type="email" class="form-control" id="email" placeholder="Ihre E-Mail">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Nachricht</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Ihre Nachricht"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Absenden</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2025 Meine Firma. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
